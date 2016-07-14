@@ -1,3 +1,4 @@
+/* select employee, their manager, and their manager's manager */
 select employees.employeeid, employees.lastname, employees.reportsto as 'Manager',mgr2_tbl.employeeid as 'Manager''s Manager'
 from employees 
 left join employees as mgr_tbl
